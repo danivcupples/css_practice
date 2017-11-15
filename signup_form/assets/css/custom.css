@@ -1,0 +1,290 @@
+/*# Exercise - Create and style a sign-up form
+
+![Completed Exercise Image](../../resources/images/css_form_completed.png)
+*/
+
+/*
+Bring in the Noto Sans font using @import url() syntax
+ - url: https://fonts.googleapis.com/css?family=Noto+Sans|Comfortaa:400,300,700
+*/
+
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans|Comfortaa:400,300,700");
+
+/*
+Set the box sizing for every element on the page using the * selector.
+When you set box-sizing: border-box; on an element, the padding and border of that element no longer increase its width.
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+/*
+using the :focus pseudo selector for the sign-up-button apply the following styles
+  - set the outline to none
+*/
+
+.sign-up-button:focus {
+  outline: none;
+}
+
+
+/*
+Set some common styles for the body of the page using the body selector
+ - set a background color of `#DDD`
+ - set the text color to `#222`
+ - set the font fmaily to be 'Noto Sans'
+ - set the font wieght to 300
+*/
+
+body {
+  background: #DDD;
+  color: #222;
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 300;
+}
+
+/*
+Style the element with the class 'login-box'
+Useful link https://www.w3schools.com/cssref/css3_pr_box-shadow.asp
+ - set its position to relative
+ - set the top and bottom margin to 5%
+ - set the left and right margin to auto
+ - set the background color to '#FFF'
+ - set the width to 600px
+ - set the height to 400px
+ - set the border radius to 2px
+ - give the box a box-shadow with the following values:
+   - horizontal shadow of 0
+   - vertical shadow of 2px
+   - blur of 4px
+   - color of rgba(0,0,0,0.4)
+*/
+
+#login-box {
+  position: relative;
+  margin: 5% auto;
+  background: #FFF;
+  width: 600px;
+  height: 400px;
+  border-radius: 2px;
+  box-shadow: 0 2px 4px rgba(0,0,0,4);
+}
+
+/*
+Style the div with the class of left
+  - set the padding to 40px
+  - set the width to 300px
+  - set the height to 400px
+  - set the position to absolute
+  - place it at the top left of its parent
+*/
+
+.left {
+  padding: 40px;
+  width: 300px;
+  height: 400px;
+  position: absolute;
+  top: -10px;
+  left: 0;
+}
+
+/*
+Style the div with the class of right
+  - set the padding to 40px
+  - set the width to 300px
+  - set the height to 400px
+  - set the position to absolute
+  - place it at the top right of its parent
+  - set the background to url('https://goo.gl/YbktSj');
+  - set the background size to cover
+  - set the background position to center
+  - set the the bottom and right border radius to 2px
+*/
+
+.right {
+  padding: 40px;
+  width: 300px;
+  height: 400px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: url('https://goo.gl/YbktSj');
+  background-size: cover;
+  background-position: center;
+  border-bottom-right-radius: 2px;
+}
+
+/*
+Style the h1 element
+ - set the bottom margin to 20px
+ - set the font weight to 300
+ - set the font size to 2em
+*/
+
+h1 {
+  margin-bottom: 20px;
+  font-weight: 300;
+  font-size: 2em;
+}
+
+/*
+Style the <input> element
+ - remove the border
+ - set a solid bottom border of 1px with a color of '#AAA'
+ - set the display to block
+ - add a bottom margin of 20 px
+ - padding of 4px
+ - set a width of 220px
+ - set a height of 32px
+ - set a font weight of 400px
+*/
+
+input {
+  border: none;
+  border-bottom: 1px solid #AAA;
+  display: block;
+  margin-bottom: 15px;
+  padding: 4px;
+  width: 220px;
+  height: 32px;
+  font-weight: 400;
+}
+
+/*
+target the button with the class of sign-up-button
+ - give a top and bottom margin of 5px
+ - set a width of 220px
+ - set a height of 32px
+ - remove the border
+ - set the border radius of 2px
+ - set the background color to #16A085
+ - set the text color to #FFF
+ - make the text uppercase
+ - set the font wieght to 400
+*/
+
+.sign-up-button {
+  margin: 5px 0;
+  background: #16A085;
+  text-transform: uppercase;
+  font-weight: 400;
+  height: 32px;
+}
+
+/*
+using the :hover pseudo selector for the sign-up-button apply the following styles
+  - set the opacity to 0.8
+  - set the box shadow to '0 2px 4px rgba(0, 0, 0, 0.4)'
+  - set the transition to '0.1s ease'
+  -
+*/
+
+.sign-up-button:hover {
+  opacity: 0.8;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.4);
+  transition: 0.1s ease;
+}
+
+/*
+using the :active pseudo selector for the sign-up-button apply the following styles
+  - set the opacity to 1
+  - set the box shadow to '0 1px 2px rgba(0, 0, 0, 0.4)'
+*/
+
+.sign-up-button:active {
+  opacity: 1;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.4);
+}
+
+/*
+Style the elemet with loginwith class
+  - set display to block
+  - set the bottom margin to 40px
+  - set the font size to 2em
+  - set the text color to #FFF
+  - make the text centered
+*/
+
+.loginwith {
+  display: block;
+  margin-bottom: 40px;
+  font-size: 2em;
+  color: #FFF;
+  text-align: center;
+}
+
+/*
+style the <button> elements
+ - set the bottom margin to 20px
+ - set the width to 220px
+ - set the height to 36px
+ - remove the border
+ - set the border-radius to 2px
+ - set the text color to #FFF
+*/
+
+button {
+  margin-bottom: 20px;
+  width: 220px;
+  height: 36px;
+  border: none;
+  border-radius: 2px;
+  color: #FFF;
+}
+
+/*
+Target the button with the class of facebook
+ - set the background color to '#32508E'
+*/
+
+.facebook {
+  background: #32508E;
+}
+
+/*
+Target the button with the class of twitter
+ - set the background color to '#55ACEE'
+*/
+
+.twitter {
+  background: #55ACEE;
+}
+
+/*
+Target the button with the class of google
+ - set the background color to '#DD4B39'
+*/
+
+.google {
+  background: #DD4B39;
+}
+
+/*
+Target the element with a class of 'or'
+ - set the position to absolute
+ - position it 180px from the top
+ - position it 280px from the left
+ - set the width and height to 40px
+ - set the background color to #DDD
+ - give a border radius of 50%
+ - align the text center
+ - set the line height to 40px
+ - set the box shadow to '0 2px 4px rgba(0, 0, 0, 0.4)'
+ -
+*/
+
+.or {
+  position: absolute;
+  top: 180px;
+  left: 280px;
+  width: 40px;
+  height: 40px;
+  background: #DDD;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.4);
+}
+```
+3. Yay! you're all done.

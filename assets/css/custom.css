@@ -49,6 +49,31 @@ a {
   padding: 5px 25px;
 }
 
+#search-box {
+  background: white;
+  height: 30px;
+  width: 200px;
+  float: left;
+  position: relative;
+  top: 40px;
+  margin-left: 15px;
+}
+
+.search-icon {
+  background: red;
+  height: 30px;
+  width: 30px;
+  float: right;
+  clear: none;
+}
+
+.search-icon img {
+  float: right;
+  position: relative;
+  top: 7px;
+  right: 7px;
+}
+
 #account {
   float: right;
   line-height: 20px;
@@ -61,9 +86,16 @@ a {
   text-align: right;
 }
 
+.account-link img {
+  position: relative;
+  top: 7px;
+  padding-left: 5px;
+}
+
 #circle {
   background: white;
   color: white;
+  text-shadow: 1px 1px 1px black;
   width: 400px;
   height: 400px;
   border-radius: 50%;
@@ -102,6 +134,14 @@ a {
 
 p {
   text-align: center;
+}
+
+.top {
   position: relative;
-  top: 60px;
+  top: 100px;
+}
+
+.bottom {
+  position: relative;
+  top: 40px;
 }
